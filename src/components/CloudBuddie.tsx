@@ -7,25 +7,25 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 function CloudBuddie() {
   const loader = new GLTFLoader();
 
-  useEffect(() => {
-    loader.load(
-      "models/buddie.glb",
-      function (gltf) {
-        gltf.scene;
-        gltf.animations; // Array<THREE.AnimationClip>
-        gltf.scene; // THREE.Group
-        gltf.scenes; // Array<THREE.Group>
-        gltf.cameras; // Array<THREE.Camera>
-        gltf.asset; // Object
-      },
-      function (xhr) {
-        console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-      },
-      function (error) {
-        console.log("ERROR", error);
-      }
-    );
-  }, []);
+  // useEffect(() => {
+  //   loader.load(
+  //     "models/buddie.glb",
+  //     function (gltf) {
+  //       gltf.scene;
+  //       gltf.animations; // Array<THREE.AnimationClip>
+  //       gltf.scene; // THREE.Group
+  //       gltf.scenes; // Array<THREE.Group>
+  //       gltf.cameras; // Array<THREE.Camera>
+  //       gltf.asset; // Object
+  //     },
+  //     function (xhr) {
+  //       console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+  //     },
+  //     function (error) {
+  //       console.log("ERROR", error);
+  //     }
+  //   );
+  // }, []);
 
   return (
     <Canvas
